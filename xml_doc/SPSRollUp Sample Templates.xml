@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="to_html.xslt"?><page>
+  <title>SPSRollUp Sample Templates</title>
+  <titleorder>A</titleorder>
+  <description />
+  <content>&lt;h4&gt;Table&lt;/h4&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUp_TemplateTable.gif" alt="" width="482" height="105" /&gt; 
+&lt;/p&gt;
+&lt;h4&gt;Table &amp;ndash; Paged&lt;/h4&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUp_TemplateTablePage.gif" alt="" width="485" height="163" /&gt; 
+&lt;/p&gt;
+&lt;h4&gt;Table &amp;ndash; Paged &amp;ndash; Columns sortable&lt;/h4&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUp_TemplateTablePageO.gif" alt="" width="501" height="136" /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="/page/SPSRollUp-WebPart.aspx"&gt;&lt;strong&gt;SPSRollUp WebPart&lt;/strong&gt;&lt;/a&gt;
+&lt;/p&gt;
+</content>
+  <keywords />
+  <parent>fe931e4a-3bf0-489f-a901-a67ec67a90b4</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <datecreated>2008-04-06 10:26:01</datecreated>
+  <datemodified>2008-04-22 17:13:20</datemodified>
+</page>

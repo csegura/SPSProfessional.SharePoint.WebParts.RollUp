@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="to_html.xslt"?><page>
+  <title>Fusion Chart Line 2D</title>
+  <titleorder />
+  <description />
+  <content>&lt;p&gt;Line 2D Chart Specification Sheet&lt;br&gt;&lt;br&gt;A 2D Line chart looks as under:  &lt;p&gt;&lt;img height="221" src="images/FC/XML_Line1.gif" width="450"&gt;  &lt;p&gt;And, the XML data for this chart can be listed as under:&lt;pre&gt;&lt;span style="color: #0000ff"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;graph&lt;/span&gt; &lt;span style="color: #ff0000"&gt;caption&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Monthly Sales Summary'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       subcaption&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'For the year 2004'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       xAxisName&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Month'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       yAxisMinValue&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'15000'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       yAxisName&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Sales'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       numberPrefix&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'$'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       showNames&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'1'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       showValues&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'0'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       rotateNames&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'0'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       showColumnShadow&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'1'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       animation&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'1'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       showAlternateHGridColor&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'1'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       AlternateHGridColor&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'ff5904'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       divLineColor&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'ff5904'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       divLineAlpha&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'20'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       alternateHGridAlpha&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'5'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       canvasBorderColor&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'666666'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;       baseFontColor&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'666666'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Jan'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'17400'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'January'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Feb'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'19800'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'February'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Mar'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'21800'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'March'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Apr'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'23800'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'April'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'May'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'29600'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'May'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Jun'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'27600'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'June'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Jul'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'31800'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'July'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Aug'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'39700'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'August'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Sep'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'37800'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'September'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Oct'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'21900'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'October'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Nov'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'32900'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'November'&lt;/span&gt; &lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;  &amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Dec'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'39800'&lt;/span&gt; &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'December'&lt;/span&gt; &lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span style="color: #0000ff"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color: #800000"&gt;graph&lt;/span&gt;&lt;span style="color: #0000ff"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;h2&gt;Elements&lt;/h2&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;The &amp;lt;graph&amp;gt; element for this chart can have the following properties: &lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Background Properties&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;bgColor="HexColorCode" : This attribute sets the background color for the chart. You can set any hex color code as the value of this attribute. Remember that you DO NOT need to assign a "#" at the beginning of the hex color code. In fact, whenever you need to provide any hex color code in FusionCharts XML data document, you do not have to assign the # at the beginning. 
+&lt;li&gt;bgAlpha="NumericalValue(0-100)" : This attribute helps you set the alpha (transparency) of the graph. This is particularly useful when you need to load the chart in one of your Flash movies or when you want to set a background image (.swf) for the chart. 
+&lt;li&gt;bgSWF="Path of SWF File" : This attribute helps you load an external .swf file as a background for the chart. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Canvas Properties&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;canvasBgColor="HexColorCode" : This attribute helps you set the background color of the canvas. 
+&lt;li&gt;canvasBgAlpha="NumericalValue(0-100)" : This attribute helps you set the alpha (transparency) of the canvas. 
+&lt;li&gt;canvasBorderColor="HexColorCode" : This attribute helps you set the border color of the canvas. 
+&lt;li&gt;canvasBorderThickness="NumericalValue(0-100)" : This attribute helps you set the border thickness (in pixels) of the canvas. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Chart and Axis Titles&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;caption="String" : This attribute determines the caption of the chart that would appear at the top of the chart. 
+&lt;li&gt;subCaption="String" : Sub-caption of the chart 
+&lt;li&gt;xAxisName= "String" : x-Axis text title (if the chart supports axis) 
+&lt;li&gt;yAxisName= "String" : y-Axis text title (if the chart supports axis) &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Chart Numerical Limits&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;yAxisMinValue="value": This attribute determines the lower limit of y-axis. 
+&lt;li&gt;yAxisMaxValue="value" : This attribute determines the upper limit of y-axis.&lt;br&gt;If you don't specify any of the above values, it is automatically calculated by FusionCharts based on the data provided by you. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Generic Properties&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;shownames="1/0" : This attribute can have either of the two possible values: 1,0. It sets the configuration whether the x-axis values (for the data sets) will be displayed or not. By default, this attribute assumes the value 1, which means that the x-axis names will be displayed. 
+&lt;li&gt;showValues="1/0" : This attribute can have either of the two possible values: 1,0. It sets the configuration whether the data numerical values will be displayed along with the columns, bars, lines and the pies. By default, this attribute assumes the value 1, which means that the values will be displayed. 
+&lt;li&gt;showLimits="1/0" : Option whether to show/hide the chart limit textboxes. 
+&lt;li&gt;rotateNames="1/0" : Configuration that sets whether the category name text boxes would be rotated or not. 
+&lt;li&gt;animation="1/0" : This attribute sets whether the animation is to be played or whether the entire chart would be rendered at one go. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Line Properties&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;lineColor="Hex Code" : If you want the entire line chart to be plotted in one color, set that color for this attribute. 
+&lt;li&gt;lineThickness="Numeric Value" : Thickness of the line (in pixels). 
+&lt;li&gt;lineAlpha="0-100" : Transparency of the line. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Line Shadow Properties&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;showShadow="1/0" : This attribute helps you set whether the line shadow would be shown or not. 
+&lt;li&gt;shadowColor="Hex Code" : If you want to set your own shadow color, you'll need to specify that color for this attribute. 
+&lt;li&gt;shadowThickness="Numeric Value" : This attribute helps you set the thickness of the shadow line (in pixels). 
+&lt;li&gt;shadowAlpha ="0-100" : This attribute sets the transparency of the shadow line. 
+&lt;li&gt;shadowXShift="Numeric Value" : This attribute helps you set the x shift of the shadow line from the chart line. That is, if you want to show the shadow 3 pixel right from the actual line, set this attribute to 3. Similarly, if you want the shadow to appear on the left of the actual line, set it to -3. 
+&lt;li&gt;shadowYShift="Numeric Value" : This attribute helps you set the y shift of the shadow line from the chart line. That is, if you want to show the shadow 3 pixel below the actual line, set this attribute to 3. Similarly, if you want the shadow to appear above the actual line, set it to -3. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Anchor properties&lt;/strong&gt; 
+&lt;p&gt;Anchors (or the marker points) are the polygons which appear at the joint of two consecutive lines. On a line chart, the anchors are the elements which react to the hover caption and link for that particular data point. You can customize all the facets of the anchors using the properties below: 
+&lt;ul&gt;
+&lt;li&gt;showAnchors="1/0": Configuration whether the anchors would be shown on the chart or not. If the anchors are not shown, then the hover caption and link functions won't work. 
+&lt;li&gt;anchorSides="Numeric Value greater than 3": This attribute sets the number of sides the anchor will have. For e.g., an anchor with 3 sides would represent a triangle, with 4 it would be a square and so on. 
+&lt;li&gt;anchorRadius="Numeric Value" : This attribute sets the radius (in pixels) of the anchor. Greater the radius, bigger would be the anchor size. 
+&lt;li&gt;anchorBorderColor="Hex Code" : Border Color of the anchor. 
+&lt;li&gt;anchorBorderThickness="Numeric Value" : Thickness of the anchor border (in pixels). 
+&lt;li&gt;anchorBgColor="Hex Code" : Background color of the anchor. 
+&lt;li&gt;anchorBgAlpha="Numeric Value" : Alpha of the anchor background. 
+&lt;li&gt;anchorAlpha="Numeric Value" : This function lets you set the tranparency of the entire anchor (including the border). This attribute is particularly useful, when you do not want the anchors to be visible on the chart, but you want the hover caption and link functionality. In that case, you can set anchorAlpha to 0.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Font Properties&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;baseFont="FontName" : This attribute sets the base font family of the chart font which lies on the canvas i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font name provided here. 
+&lt;li&gt;baseFontSize="FontSize" : This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font size provided here. 
+&lt;li&gt;baseFontColor="HexColorCode" : This attribute sets the base font color of the chart i.e., all the values and the names in the chart which lie on the canvas will be displayed using the font color provided here. 
+&lt;li&gt;outCnvBaseFont = "FontName" : This attribute sets the base font family of the chart font which lies outside the canvas i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font name provided here. 
+&lt;li&gt;outCnvBaseFontSze="FontSize" : This attribute sets the base font size of the chart i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font size provided here. 
+&lt;li&gt;outCnvBaseFontColor="HexColorCode": This attribute sets the base font color of the chart i.e., all the values and the names in the chart which lie outside the canvas will be displayed using the font color provided here. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Number Formatting Options&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;numberPrefix="$" : Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all dollars figure on the chart, you could specify this attribute to ' $' to show like $40000, $50000. 
+&lt;li&gt;numberSuffix="p.a" : Using this attribute, you could add prefix to all the numbers visible on the graph. For example, to represent all figure quantified as per annum on the chart, you could specify this attribute to ' /a' to show like 40000/a, 50000/a. &lt;br&gt;&lt;strong&gt;To use special characters for numberPrefix or numberSuffix, you'll need to URL Encode them. That is, suppose you wish to have numberSuffix as % (like 30%), you'll need to specify it as under:&lt;br&gt;numberSuffix='%25' &lt;/strong&gt;
+&lt;li&gt;formatNumber="1/0" : This configuration determines whether the numbers displayed on the chart will be formatted using commas, e.g., 40,000 if formatNumber='1' and 40000 if formatNumber='0 ' 
+&lt;li&gt;formatNumberScale="1/0" : Configuration whether to add K (thousands) and M (millions) to a number after truncating and rounding it - e.g., if formatNumberScale is set to 1, 10434 would become 1.04K (with decimalPrecision set to 2 places). Same with numbers in millions - a M will added at the end. 
+&lt;li&gt;decimalSeparator="." : This option helps you specify the character to be used as the decimal separator in a number. 
+&lt;li&gt;thousandSeparator="," : This option helps you specify the character to be used as the thousands separator in a number. 
+&lt;li&gt;decimalPrecision="2" : Number of decimal places to which all numbers on the chart would be rounded to. 
+&lt;li&gt;divLineDecimalPrecision="2": Number of decimal places to which all divisional line (horizontal) values on the chart would be rounded to. 
+&lt;li&gt;limitsDecimalPrecision="2" : Number of decimal places to which upper and lower limit values on the chart would be rounded to. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Zero Plane&lt;/strong&gt; 
+&lt;p&gt;The zero plane is a simple plane (line) that signifies the 0 position on the chart. If there are no negative numbers on the chart, you won't see a visible zero plane. 
+&lt;ul&gt;
+&lt;li&gt;zeroPlaneThickness="Numeric Value" : Thickness (in pixels) of the line indicating the zero plane. 
+&lt;li&gt;zeroPlaneColor="Hex Code" : The intended color for the zero plane. 
+&lt;li&gt;zeroPlaneAlpha="Numerical Value 0-100" : The intended transparency for the zero plane. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Divisional Lines (Horizontal)&lt;/strong&gt; 
+&lt;p&gt;Divisional Lines are horizontal or vertical lines running through the canvas. Each divisional line signfies a smaller unit of the entire axis thus aiding the users in interpreting the chart. 
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;/strong&gt;numdivlines="NumericalValue" : This attribute sets the number of divisional lines to be drawn. 
+&lt;li&gt;divlinecolor="HexColorCode" : The color of grid divisional line. 
+&lt;li&gt;divLineThickness="NumericalValue" : Thickness (in pixels) of the grid divisional line. 
+&lt;li&gt;divLineAlpha="NumericalValue0-100" : Alpha (transparency) of the grid divisional line. 
+&lt;li&gt;showDivLineValue="1/0" : Option to show/hide the textual value of the divisional line. 
+&lt;li&gt;showAlternateHGridColor="1/0" : Option on whether to show alternate colored horizontal grid bands. 
+&lt;li&gt;alternateHGridColor="HexColorCode" : Color of the alternate horizontal grid bands. 
+&lt;li&gt;alternateHGridAlpha="NumericalValue0-100" : Alpha (transparency) of the alternate horizontal grid bands. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Divisional Lines (Vertical)&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;numVDivLines="NumericalValue" : Sets the number of vertical divisional lines to be drawn. 
+&lt;li&gt;VDivlinecolor="HexColorCode" : Color of vertical grid divisional line. 
+&lt;li&gt;VDivLineThickness="NumericalValue" : Thickness (in pixels) of the line 
+&lt;li&gt;VDivLineAlpha="NumericalValue0-100" : Alpha (transparency) of the line. 
+&lt;li&gt;showAlternateVGridColor="1/0" : Option on whether to show alternate colored vertical grid bands. 
+&lt;li&gt;alternateVGridColor="HexColorCode" : Color of the alternate vertical grid bands. 
+&lt;li&gt;alternateVGridAlpha="NumericalValue0-100" : Alpha (transparency) of the alternate vertical grid bands. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hover Caption Properties&lt;/strong&gt; 
+&lt;p&gt;The hover caption is the tool tip which shows up when the user moves his mouse over a particular data item (column, line, pie, bar etc.). 
+&lt;ul&gt;
+&lt;li&gt;showhovercap="1/0" : Option whether to show/hide hover caption box. 
+&lt;li&gt;hoverCapBgColor="HexColorCode" : Background color of the hover caption box. 
+&lt;li&gt;hoverCapBorderColor="HexColorCode" : Border color of the hover caption box. 
+&lt;li&gt;hoverCapSepChar="Char" : The character specified as the value of this attribute separates the name and value displayed in the hover caption box. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Chart Margins&lt;/strong&gt; 
+&lt;p&gt;Chart Margins refers to the empty space left on the top, bottom, left and right of the chart. That means, FusionCharts would leave that much amount of empty space on the chart, before it starts plotting. 
+&lt;ul&gt;
+&lt;li&gt;chartLeftMargin="Numerical Value (in pixels)" : Space to be left unplotted on the left side of the chart. 
+&lt;li&gt;chartRightMargin="Numerical Value (in pixels)" : Empty space to be left on the right side of the chart 
+&lt;li&gt;chartTopMargin="Numerical Value (in pixels)" : Empty space to be left on the top of the chart. 
+&lt;li&gt;chartBottomMargin="Numerical Value (in pixels)" : Empty space to be left at the bottom of the chart. &lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;&amp;lt;set&amp;gt; element&lt;/h3&gt;
+&lt;p&gt;We now move on to the &amp;lt;set&amp;gt; element which is a child element of the &amp;lt;graph&amp;gt; element and determines a set of data which would appear on the graph. 
+&lt;p&gt;A &amp;lt;set&amp;gt; element looks as under: &lt;br&gt;&lt;pre&gt;&amp;nbsp;&lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #0000ff"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;set&lt;/span&gt; &lt;span style="color: #ff0000"&gt;name&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"Jan"&lt;/span&gt; 
+     &lt;span style="color: #ff0000"&gt;value&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"54"&lt;/span&gt; 
+     &lt;span style="color: #ff0000"&gt;color&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"3300FF"&lt;/span&gt; 
+     &lt;span style="color: #ff0000"&gt;hoverText&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"January"&lt;/span&gt; 
+     &lt;span style="color: #ff0000"&gt;link&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"ShowDetails.asp%3FMonth=Jan"&lt;/span&gt; 
+     &lt;span style="color: #ff0000"&gt;alpha&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"80"&lt;/span&gt; 
+     &lt;span style="color: #ff0000"&gt;showName&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;"1"&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;pre&gt;&lt;/pre&gt;
+&lt;p&gt;Now let's study the the possible attributes of the &amp;lt;set&amp;gt; element: 
+&lt;ul&gt;
+&lt;li&gt;name="string"&lt;br&gt;Example: &amp;lt;set name='Jan' ...&amp;gt;&lt;br&gt;This attribute determines the name by which the set of data would be represented in the chart. In the above example, the value of this attribute is "Jan" and therefore, this set of data would be represented on the chart with the name "Jan". 
+&lt;li&gt;value="NumericalValue"&lt;br&gt;Example: &amp;lt;set name='Jan' value='12345' ...&amp;gt;&lt;br&gt;This attribute determines the numerical value for the set of data according to which the chart would be built for the concerned set of data. 
+&lt;li&gt;color="HexCode"&lt;br&gt;Example: &amp;lt;set name='Jan' value='12345' color='636363' ...&amp;gt;&lt;br&gt;This attribute determines the color for the concerned set of data in which it would appear in the graph. 
+&lt;li&gt;hoverText="String value"&lt;br&gt;Example: &amp;lt;set name='Jan' value='12345' color='636363' hoverText='January'...&amp;gt;&lt;br&gt;Sometimes, you might just want to show the abbreviated names on the x-axis (to avoid cluttering or to make the chart look more legible). However, you still have the option of showing the full name as tool tip using this attribute. Like, in our example, we're showing the abbreviated form "Jan" on our x-axis, but the full word "January" is shown as the tool tip. 
+&lt;li&gt;alpha="Numerical Value 0-100"&lt;br&gt;Example: &amp;lt;set ... alpha='100' ...&amp;gt;&lt;br&gt;This attribute determines the transparency of a data set. The range for this attribute is 0 to 100. 0 means complete transparency (the data set won’t be shown on the graph) and 100 means opaque. This option is useful when you want to highlight a particular set of data. 
+&lt;li&gt;link="URL"&lt;br&gt;Example: &amp;lt;set … link='ShowDetails.asp%3FMonth=Jan' ...&amp;gt;&lt;br&gt;This attribute defines the hotspots in your graph. The hotspots are links over the data sets. Please note that you'll need to URL Encode all the special characters (like ? and &amp;amp;) present in the link.All the server side scripting languages provide a generic function to URL Encode any string - like in ASP and ASP.NET, we've Server.URLEncode(strURL) and so on. &lt;br&gt;To open a link in a new window, just put n- in front of the link e.g., link="n-ShowDetails.asp%3FMonth=Jan". 
+&lt;li&gt;showName="1"&lt;br&gt;Example : &amp;lt;set ... showName="1" ...&amp;gt;&lt;br&gt;This attribute can either the value of 0 or 1. A value of 1 indicates that the name of this data set will be displayed in the graph whereas 0 indicates it won't be displayed. This attribute is particular useful when you want to show/hide names of alternate data items or say every x (th) data item. &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;At the end of the &amp;lt;set&amp;gt; element, you would find a "/" which signals that it has no more child element 
+&lt;h3&gt;&amp;lt;trendLines&amp;gt;&lt;/h3&gt;
+&lt;p&gt;Using the &amp;lt;trendLines&amp;gt; element (and child elements), you can define trend lines on the charts. Trend lines are the horizontal lines spanning the chart canvas that aid in interpretation of data with respect to some previous pre-determined figure. For each trend line on the chart, you need to define a &amp;lt;line&amp;gt; element as under:&lt;br&gt;&lt;/p&gt;&lt;pre&gt;&lt;span style="color: #0000ff"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;line&lt;/span&gt; &lt;span style="color: #ff0000"&gt;startValue&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'89.5'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      endValue&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'98'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      color&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'FF0000'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      displayvalue&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'Roll. Avg.'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      thickness&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'2'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      alpha&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'100'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      isTrendZone&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'0'&lt;/span&gt; &lt;/pre&gt;&lt;pre&gt;&lt;span style="color: #ff0000"&gt;      showOnTop&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;'1'&lt;/span&gt;&lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;
+&lt;p&gt;The &amp;lt;line&amp;gt; element can have the following attributes: 
+&lt;ul&gt;
+&lt;li&gt;startValue='NumericalValue': The starting y-axis value for the trendline. Say, if you want to plot a slanted trendline from value 102 to 109, the startValue would 102. 
+&lt;li&gt;endValue='NumericalValue': The ending y-axis value for the trendline. Say, if you want to plot a slanted trendline from value 102 to 109, the endValue would 109. If you do not specify a value for endValue, it would automatically assume the same value as startValue. 
+&lt;li&gt;color='HexCode' : Color of the trend line and its associated text. 
+&lt;li&gt;displayValue='StringValue' : If you want to display a string caption for the trend line by its side, you can use this attribute. Example: displayValue='Last Month High'. When you don't supply this attribute, it automatically takes the value of startValue. 
+&lt;li&gt;thickness='NumericalValue' : Thickness of the trend line 
+&lt;li&gt;isTrendZone='1/0': Whether the trend would display a line, or a zone (filled colored rectangle). 
+&lt;li&gt;showOnTop='1/0': Whether the trend line/zone would be displayed over other elements of the chart. 
+&lt;li&gt;alpha='NumericalValue0-100': Alpha (transparency) of the trend line &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;At the end of the data file, you would find a &amp;lt;/graph&amp;gt; element, which signals the end of the data file for the graph. 
+&lt;p&gt;&lt;b&gt;Reproduced with permission of&lt;/b&gt; &lt;a href="http://www.fusioncharts.com/"&gt;&lt;strong&gt;Fusion Charts&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</content>
+  <keywords />
+  <parent>45bc9e73-ffe1-468e-8c50-9bd0b8837ca3</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <datecreated>2008-04-21 22:37:44</datecreated>
+  <datemodified>2008-04-22 23:15:48</datemodified>
+</page>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="to_html.xslt"?><page>
+  <title>SPS Namespace Functions</title>
+  <titleorder>A</titleorder>
+  <description />
+  <content>&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+The SPSRollUp Engine has an engine to extend the XSL namespace. To refer to this namespace you need to add in the XSLT header these:
+&lt;/p&gt;
+&lt;pre&gt;
+&lt;span style="color: #0000ff"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color: #c71585"&gt;xsl&lt;/span&gt;:&lt;span style="color: #800000"&gt;stylesheet&lt;/span&gt; &lt;span style="color: #ff0000"&gt;version&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt; 
+&lt;span style="color: #ff0000"&gt;xmlns&lt;/span&gt;:&lt;span style="color: #ff0000"&gt;xsl&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;&amp;quot;http://www.w3.org/1999/XSL/Transform&amp;quot;&lt;/span&gt; 
+&lt;strong&gt;&lt;span style="color: #ff0000"&gt;xmlns&lt;/span&gt;:&lt;span style="color: #ff0000"&gt;sps&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;&amp;quot;http://schemas.spsprofessional.com/WebParts/SPSXSLT&amp;quot;&lt;/span&gt;&lt;/strong&gt;&lt;span style="color: #0000ff"&gt;&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;
+&lt;br /&gt;
+Then you can use the internal SPSRollUp functions; There are two groups, the first one are functions to manage the behavior of the SPSRollUp control, and the second one are functions to improve the work with the XSLT, some of this functions are similar to functions provided with the standard SharePoint Data View WebPart control. &lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;Control Functions&lt;/h2&gt;
+&lt;h4&gt;Event&lt;/h4&gt;
+&lt;p&gt;
+&lt;strong&gt;Syntax:&lt;/strong&gt; Event(command,parameter) &lt;br /&gt;
+&lt;br /&gt;
+To send an event to the control, the possible commands are; Select, to select a record; Page to send a page&amp;rsquo;s change; and Sort, to sort the results. &lt;br /&gt;
+&lt;br /&gt;
+&lt;font color="#004080"&gt;&lt;strong&gt;Sample&lt;/strong&gt;&lt;/font&gt;: &lt;font face="Courier New"&gt;&lt;/font&gt;&amp;nbsp; &lt;br /&gt;
+&lt;span style="color: #0000ff"&gt;&lt;br /&gt;
+&amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;a&lt;/span&gt; &lt;span style="color: #ff0000"&gt;href&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;&amp;quot;{sps:Event(&amp;#39;Send&amp;#39;,_RowNumber)}&amp;quot;&lt;/span&gt;&lt;span style="color: #0000ff"&gt;&amp;gt;&lt;/span&gt;Select&lt;span style="color: #0000ff"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color: #800000"&gt;a&lt;/span&gt;&lt;span style="color: #0000ff"&gt;&amp;gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;h4&gt;EventJS&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; EventJS(command,parameter) &lt;br /&gt;
+&lt;br /&gt;
+Similar to Event, for use inside Javascript. &lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;Other Functions&lt;/h2&gt;
+&lt;h4&gt;Counter&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; Counter() &lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Returns an incremental number. The number remains unique over the page requests unless the application module is unloaded.
+&lt;/p&gt;
+&lt;h4&gt;FormatDate&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; FormatDateTime(string sDate, long lcid, string sFormat) &lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+The parameter sDate is converted to a DateTime. This is based on the sFormat parameter, which is a standard DateTime formatting flag, a new DateTime string then is constructed in the given locale lcid. 
+&lt;/p&gt;
+&lt;h4&gt;GetFileExtension&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; GetFileExtension(string targetUrl) &lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Returns the targetUrl&amp;rsquo; extension file. (The portion after the &amp;quot;.&amp;quot; character). If an extension is not present, an empty string will return.
+&lt;/p&gt;
+&lt;h4&gt;GetStringBeforeSeparator&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; GetStringBeforeSeparator(string inputString) &lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Given the string&amp;rsquo;s parameter inputString, this function returns the part before the first &amp;quot;;&amp;quot; or &amp;quot;#&amp;quot; character. For example, if szval is &amp;quot;Aaaaa;Bbbbb&amp;quot;, the string &amp;quot;Aaaaa&amp;quot; will be returned. 
+&lt;/p&gt;
+&lt;h4&gt;IfNew&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; GetStringBeforeSeparator(string createdTime) &lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Returns true if the parameter createdTime is less than two days old; otherwise, it will return false. 
+&lt;/p&gt;
+&lt;h4&gt;MapToIcon&lt;/h4&gt;
+&lt;p&gt;
+&lt;strong&gt;Syntax:&lt;/strong&gt; MapToIcon(string fileName, string programId) &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Returns the Icon for the given file name or program. The Icon is the name for the .gif file, without the complete path to the file. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;font color="#004080"&gt;&lt;strong&gt;Sample&lt;/strong&gt;&lt;/font&gt;: &lt;font face="Courier New"&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/p&gt;
+&lt;pre&gt;
+&lt;span style="color: #0000ff"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color: #800000"&gt;img&lt;/span&gt; &lt;span style="color: #ff0000"&gt;src&lt;/span&gt;=&lt;span style="color: #0000ff"&gt;&amp;quot;_layouts/images/{sps:MapToIcon(FileRef,&amp;#39;&amp;#39;)&amp;quot;&lt;/span&gt; &lt;span style="color: #0000ff"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;h4&gt;Limit&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; Limit(string inputText, int maxLength, string additionalText)&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+If the given string&amp;rsquo;s parameter inputText is longer than ten characters, this function returns the first ten characters, with the additionalText string appended. Otherwise the input string will be returned unmodified. Note, this function should not be used with HTML strings as the string is truncated without taking into account the HTML markup. 
+&lt;h4&gt;Today&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; Today() &lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Returns the current date and current time, in the format MM/dd/yyyy HH:mm:ss 
+&lt;/p&gt;
+&lt;h4&gt;TodayIso&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; TodayIso() &lt;br /&gt;
+&lt;br /&gt;
+Return the current day and current time, in the format yyyy-MM-ddTHH:mm:ss 
+&lt;h4&gt;UrlBaseName&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; UrlBaseName(string targetUrl)&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Returns the file&amp;rsquo;s basename into the URL targetUrl . For example, if targetUrl is /path/path/basename.exten the value basename will be returned.
+&lt;/p&gt;
+&lt;h4&gt;UrlDirName&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; UrlDirName(string targetUrl)&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+Returns the directory name file into the URL targetUrl. For example, if targetUrl is /path/path/basename.exten the value /path/path will be returned. 
+&lt;/p&gt;
+&lt;h4&gt;UrlEncode&lt;/h4&gt;&lt;strong&gt;Syntax:&lt;/strong&gt; UrlEncode(string stringToEncode)&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+The string parameter szUrl is encoded so it can be safely used as part of a URL. 
+&lt;/p&gt;
+</content>
+  <keywords />
+  <parent>fe931e4a-3bf0-489f-a901-a67ec67a90b4</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <datecreated>2008-04-06 13:09:24</datecreated>
+  <datemodified>2008-04-22 17:15:02</datemodified>
+</page>

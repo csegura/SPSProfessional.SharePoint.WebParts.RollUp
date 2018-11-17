@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="to_html.xslt"?><page>
+  <title>SPSRollUpChart WebPart - Chart Gallery</title>
+  <titleorder>A</titleorder>
+  <description />
+  <content>&lt;h3&gt;Bar2D &amp;amp; Column2D&lt;/h3&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUpChart_Bar2D.gif" alt="" width="300" height="300" /&gt; &lt;img src="images/products/SPSRollUpChart_Column2D.gif" alt="" width="300" height="300" /&gt; 
+&lt;/p&gt;
+&lt;h3&gt;Column3D &amp;amp; Lines&lt;/h3&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUpChart_Column3D.gif" alt="" width="300" height="300" /&gt; &lt;img src="images/products/SPSRollUpChart_Lines.gif" alt="" width="300" height="300" /&gt; 
+&lt;/p&gt;
+&lt;h3&gt;Pie2D &amp;amp; Pie3D&lt;/h3&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUpChart_Pie2D.gif" alt="" width="300" height="300" /&gt; &lt;img src="images/products/SPSRollUpChart_Pie3D.gif" alt="" width="300" height="300" /&gt; 
+&lt;/p&gt;
+&lt;h3&gt;Multi Serie 3D &amp;amp; Stacked Bars 3D&lt;/h3&gt;
+&lt;p style="text-align: center"&gt;
+&lt;img src="images/products/SPSRollUpChart_MSColumn3D.gif" alt="" width="400" height="300" /&gt; &lt;img src="images/products/SPSRollUpChart_StackedBar3D.gif" alt="" width="400" height="300" /&gt; 
+&lt;/p&gt;
+</content>
+  <keywords />
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <datecreated>2008-04-06 16:29:38</datecreated>
+  <datemodified>2008-04-06 16:30:28</datemodified>
+</page>

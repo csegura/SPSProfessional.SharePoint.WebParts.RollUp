@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="to_html.xslt"?><page>
+  <title>SPSRollUp CAML Functions</title>
+  <titleorder>A</titleorder>
+  <description />
+  <content>&lt;h4&gt;Functions that can be used in &lt;span class="caps"&gt;CAML&lt;/span&gt; queries&lt;/h4&gt;
+&lt;p style="float: right; margin-left: 15px"&gt;
+&lt;img src="images/products/SPSRollUp_Images3.gif" alt="" width="325" height="293" /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DateNow()&lt;/strong&gt; &amp;ndash; Return the current date. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DateTimeNow()&lt;/strong&gt; &amp;ndash; Return the current date and time. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;MonthNumber()&lt;/strong&gt; &amp;ndash; Returns the current month in a number format. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DayNumber()&lt;/strong&gt; &amp;ndash; Returns the current day in a number format. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;YearNumber()&lt;/strong&gt; &amp;ndash; Returns the current year in a&amp;nbsp; number format. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;UserLogin()&lt;/strong&gt; &amp;ndash; The current user login (DOMAIN\Account) 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;UserName()&lt;/strong&gt; &amp;ndash; The user name. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;UserId()&lt;/strong&gt; &amp;ndash; The user ID. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;UserEmail()&lt;/strong&gt; &amp;ndash; The current user email. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;WebName()&lt;/strong&gt; &amp;ndash; The current web name. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;WebTitle()&lt;/strong&gt; &amp;ndash; The current web title. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;WebUrl()&lt;/strong&gt; &amp;ndash; The current web Url. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;QueryString(&amp;lsquo;variable&amp;rsquo;)&lt;/strong&gt; &amp;ndash; Get a value from the query string . 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DateFormat(&amp;lsquo;parameter&amp;rsquo;)&lt;/strong&gt; &amp;ndash; The date formatted in 
+&lt;/p&gt;
+&lt;table border="0" style="margin-left: 30px; border: black 1px solid"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style="text-align: center"&gt;Format &lt;/td&gt;
+			&lt;td style="text-align: center"&gt;Result&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;d&lt;/td&gt;
+			&lt;td&gt;MM/dd/yyyy&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;D&lt;/td&gt;
+			&lt;td&gt;dddd, &lt;span class="caps"&gt;MMMM&lt;/span&gt; dd, yyyy&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;f&lt;/td&gt;
+			&lt;td&gt;dddd, &lt;span class="caps"&gt;MMMM&lt;/span&gt; dd, yyyy HH:mm&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;F&lt;/td&gt;
+			&lt;td&gt;dddd, &lt;span class="caps"&gt;MMMM&lt;/span&gt; dd, yyyy HH:mm:ss&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;g&lt;/td&gt;
+			&lt;td&gt;MM/dd/yyyy HH:mm&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;G&lt;/td&gt;
+			&lt;td&gt;MM/dd/yyyy HH:mm:ss&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;m, M&lt;/td&gt;
+			&lt;td&gt;&lt;span class="caps"&gt;MMMM&lt;/span&gt; dd&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;r, R&lt;/td&gt;
+			&lt;td&gt;Ddd, dd &lt;span class="caps"&gt;MMM&lt;/span&gt; yyyy HH&amp;rsquo;:&amp;rsquo;mm&amp;rsquo;:&amp;rsquo;ss &amp;lsquo;GMT&amp;rsquo;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;s&lt;/td&gt;
+			&lt;td&gt;yyyy-MM-dd HH:mm:ss&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;S&lt;/td&gt;
+			&lt;td&gt;yyyy-MM-dd HH:mm:ss &lt;span class="caps"&gt;GMT&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;t&lt;/td&gt;
+			&lt;td&gt;HH:mm&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;T&lt;/td&gt;
+			&lt;td&gt;HH:mm:ss&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;u&lt;/td&gt;
+			&lt;td&gt;yyyy-MM-dd HH:mm:ss&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;U&lt;/td&gt;
+			&lt;td&gt;dddd, &lt;span class="caps"&gt;MMMM&lt;/span&gt; dd, yyyy HH:mm:ss&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+&lt;strong&gt;DateCalcFormat(&amp;lsquo;format&amp;rsquo;,calc)&lt;/strong&gt; &amp;ndash;&amp;nbsp; It is the same as DateFormat but as a second argument you can specified a calc, the format of the calc is M, D, Y. In order to specify the operation&amp;rsquo;s mode, M is for months, D is for Days and Y is for Years, to add a plus sign, to substract a minus sign and the value. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DateCalcFormat(&amp;lsquo;d&amp;rsquo;,M+1)&lt;/strong&gt; &amp;ndash; It is the current date with the month incremented in one. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DateCalcFormat(&amp;lsquo;d&amp;rsquo;,D-1)&lt;/strong&gt; &amp;ndash; Yesterday 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;DateCalcFormat(&amp;rsquo;s&amp;rsquo;,Y-1)&lt;/strong&gt; &amp;ndash; A year ago. 
+&lt;/p&gt;
+</content>
+  <keywords />
+  <parent>fe931e4a-3bf0-489f-a901-a67ec67a90b4</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <datecreated>2008-04-06 11:40:28</datecreated>
+  <datemodified>2008-05-07 15:30:39</datemodified>
+</page>
