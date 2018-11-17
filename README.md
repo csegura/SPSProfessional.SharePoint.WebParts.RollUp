@@ -69,15 +69,16 @@ In the webpart properties you can configure:
 
 Inside the CAML Queries you can use a set of custom functions made by **SPSProfessional**; these functions have the next format:
 
-`[<Variable Name>:<Function(<arguments>)> or <Default value>]`
+```[<Variable Name>:<Function(<arguments>)> or <Default value>]```
 
 Variable name, it is the name of a variable for example “MyDate”, in this function you can use one of the **SPSProfessional** custom functions as _DateFormat(’s’)_ that returns the current date time in a shorter format.
 
 Then the correct syntax which you can use inside the query and it will be _\[Date:DateFormat(‘s’)\]_
 
+```xml
 <Where\> <Eq\> <FieldRef Name\="StartDate" /> <Value Type\="Text"\>\[Date:DateFormat('s')\]</Value\> </Eq\> </Where\> 
-
 <Where\> 
+````
 
 This CAML query must return the items that match the condition where StartDate is equal to current date time.
 
@@ -132,7 +133,9 @@ To which we must fill the **SPSRollUp** properties as follows:
 
 In the query’s field CAML we will place the following query to display only the remaining tasks.
 
-```<Where\> <Neq\> <FieldRef Name\="Status" /> <Value Type\="Choice"\>Completed</Value\> </Neq\> </Where\> ```
+```xml
+<Where\> <Neq\> <FieldRef Name\="Status" /> <Value Type\="Choice"\>Completed</Value\> </Neq\> </Where\>
+```
 
 Remember that CAML consultations are case-sensitive, and they require a precise syntax. Once the inquiry is introduced, press the button to apply twice.
 
@@ -178,10 +181,11 @@ Control Functions
   
 To send an event to the control, the possible commands are; Select, to select a record; Page to send a page’s change; and Sort, to sort the results.  
   
-**Sample**:    
+**Sample**: 
+
 ```html  
 <a href\="{sps:Event('Send',\_RowNumber)}"\>Select</a\>
-````
+```
 
 #### EventJS
 
@@ -381,27 +385,112 @@ dddd, MMMM dd, yyyy HH:mm:ss
 
 **DateCalcFormat(’s’,Y-1)** – A year ago.
 
-PSRollUp CAML Functions
+SPSRollUpChart WebPart
 
-#### Functions that can be used in CAML queries 
+With the **SPSProfessional** **SPSRollUpChart** WebPart the **SHOW** begins.
 
-!\[\](images\_Images3.gif) 
+![](images/SPSRollUpChart_Video.gif) 
 
-**DateNow()** – Return the current date. 
-**DateTimeNow()** – Return the current date and time. 
-**MonthNumber()** – Returns the current month in a number format. 
-**DayNumber()** – Returns the current day in a number format. 
-**YearNumber()** – Returns the current year in a number format. 
-*\*UserLogin()** – The current user login (DOMAIN\\\\Account) 
-**UserName()** – The user name. 
-**UserId()** – The user ID. 
-**UserEmail()** – The current user email. 
-**WebName()** – The current web name. 
-**WebTitle()** – The current web title. 
-**WebUrl()** – The current web Url. 
-**QueryString(‘variable’)** – Get a value from the query string . 
-**DateFormat(‘parameter’)** – The date formatted in Format Result d MM/dd/yyyy D dddd, MMMM dd, yyyy f dddd, MMMM dd, yyyy HH:mm F dddd, MMMM dd, yyyy HH:mm:ss g MM/dd/yyyy HH:mm G MM/dd/yyyy HH:mm:ss m, M MMMM dd r, R Ddd, dd MMM yyyy HH’:’mm’:’ss ‘GMT’ s yyyy-MM-dd HH:mm:ss S yyyy-MM-dd HH:mm:ss GMT t HH:mm T HH:mm:ss u yyyy-MM-dd HH:mm:ss U dddd, MMMM dd, yyyy HH:mm:ss 
-**DateCalcFormat(‘format’,calc)** – It is the same as DateFormat but as a second argument you can specified a calc, the format of the calc is M, D, Y. In order to specify the operation’s mode, M is for months, D is for Days and Y is for Years, to add a plus sign, to substract a minus sign and the value. 
-**DateCalcFormat(‘d’,M+1)** – It is the current date with the month incremented in one. 
-**DateCalcFormat(‘d’,D-1)** – Yesterday 
-**DateCalcFormat(’s’,Y-1)** – A year ago. fe931e4a-3bf0-489f-a901-a67ec67a90b4 False True True 2008-04-06 11:40:28 2008-05-07 15:30:39
+Continuing with the **SPSRollUp** philosophy, with the **SPSRollUp** Chart you will be able to transform the data given back by rollup into graphs.
+
+Basically the **SPSRollUpChart** has a similar operation to the **SPSRollUp**, and this means that it tracks sites and lists collecting information.
+
+Later instead of transforming the results into HTML, what we will do is to process the result to turn it into XML and to draw a graph.
+
+  
+
+### Installation
+
+See: **[Install SPSProfessional Solutions](/page/install-spsprofessional-sharepoint-solutions.aspx)**
+
+### Installation Requirements
+
+*   The **SPSProfessional** RollUp WebPart performs in **WSS 3** and or **MOSS 2007**
+*   **SharePoint** Administrator’s Account is needed to install the solution
+
+WebPart Properties
+------------------
+
+The main properties are the same ones that **SPSRollUp** has.
+
+The **SPSRollUPChart** adds these properties:
+
+**Width:** the graph width
+
+**Height:** The Graph height
+
+**Chart Type:** The graph could be type:
+
+*   Line
+*   Bar2D
+*   Area2D
+*   Column2D
+*   Column3D
+*   Pie2D
+*   Pie3D
+*   MSColumn3D
+*   MSColumn3DLineDY
+*   StackedColumn3D
+
+[**See the graph gallery.**](/page/SPSRollUpChart-WebPart---Chart-Gallery.aspx)
+
+Debug XML Chart shows the XML generated by the transformation from which the graphs will be drawn.
+
+### Notes
+
+The **SPSRollUpChart**, makes use of the [FusionCharts](http://www.fusioncharts.com/) company graphs, these graphs work using **FLASH**. So that internally what the **SPSRollUpChart**, does is to transform the results of the tracking the XML, into XML that is understood by the [FusionCharts](http://www.fusioncharts.com/) graphs.
+
+The result as you can see will be spectacular.
+
+### Operation
+
+Let us see a simple example, in where we hope to obtain a graph of the projects tasks state
+
+We will select the "Project Tasks" list and the "Title and PercentComplete" fields, then in the XSL we will enter the following code that will be in charge to transform the XML obtained with the tracking into XML that can be understood by the [FusionCharts](http://www.fusioncharts.com/).
+
+```xml
+<?xml version="1.0" encoding="utf-8"?> <xsl:stylesheet version\="1.0" 
+xmlns:xsl\="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl\="urn:schemas-microsoft-com:xslt" exclude\-result\-prefixes\="msxsl"\> <xsl:output method\="xml" indent\="yes"/> <xsl:template match\="@\* | node()"\> <!-- Graph --> <graph caption\="Title" xAxisName\="Tasks" yAxisName\="Completed" decimalPrecision\="0" formatNumberScale\="0"\> <xsl:apply\-templates /> </graph\> </xsl:template\> <xsl:template match\="Row"\> <set name\="{Title}" value\="{PercentComplete}" /> </xsl:template\> </xsl:stylesheet\>
+````
+
+Later, we will fix the width and the height that we wish for our graph, as well as the type of graph which we wish to obtain. (Some graphs, as multiple serial graphs can require a more complex transformation)
+
+**SPSRollUpChart** includes XSLT as an example to make this type of graphs.
+
+We will mark the Debug XML Results and Debug XML Chart boxes, to see how the data is transformed.
+
+The result:
+
+DEBUG XML
+
+```xml
+<Rows\> <Row\> <\_RowNumber\>0</\_RowNumber\> <Title\>Task in Main Project</Title\> <PercentComplete\>0.6</PercentComplete\> </Row\> <Row\> <\_RowNumber\>1</\_RowNumber\> <Title\>New Task</Title\> <PercentComplete\>0.4</PercentComplete\> </Row\> <Row\> <\_RowNumber\>2</\_RowNumber\> <Title\>Task Completed</Title\> <PercentComplete\>1</PercentComplete\> </Row\> </Rows\> 
+````
+
+DEBUG XML
+
+```xml
+<graph caption\="Title"   
+ xAxisName\="Tasks"   
+ yAxisName\="Completed"   
+ decimalPrecision\="1"   
+ formatNumberScale\="0"\>  <set name\="Task in Main Project" value\="0.6" color\="AFD8F8" />  <set name\="New Task" value\="0.4" color\="F6BD0F" />  <set name\="Task Completed" value\="1" color\="8BBA00" /> </graph\> 
+````
+
+The result:
+
+![](images/spsrollupchart.gif)
+
+### Additional Documentation
+
+**Fusion Chart XML reference**
+
+*   [Fusion Chart Area 2D](/page/Fusion-Chart-Area-2D.aspx)
+*   [Fusion Chart Bar 2D](/page/Fusion-Chart-Bar-2D.aspx)
+*   [Fusion Chart Column2D / Column3D](/page/Fusion-Chart-Column2D--Column3D.aspx)
+*   [Fusion Chart Line 2D](/page/Fusion-Chart-Line-2D.aspx)
+*   [Fusion Chart Pie 2D & Pie 3D](/page/Fusion-Chart-Pie-2D-amp3b-Pie-3D.aspx)
+*   [Fusion Chart Multi Series Column 3D Column Chart](/page/Fusion-Chart-Multi-Series-Column-3D-Column-Chart.aspx)
+*   [Fusion Chart Stacked Column 3D](/page/Fusion-Chart-Stacked-Column-3D.aspx)
+    
+    In order to personalize the graphs you can consult the FusionCharts Information files [here](http://www.fusioncharts.com/free).
