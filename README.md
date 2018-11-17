@@ -401,7 +401,8 @@ Basically the **SPSRollUpChart** has a similar operation to the **SPSRollUp**, a
 
 Later instead of transforming the results into HTML, what we will do is to process the result to turn it into XML and to draw a graph.
 
-  
+[![Show Video](https://img.youtube.com/vi/seL7dClgHNg/0.jpg)](https://www.youtube.com/watch?v=seL7dClgHNg)
+
 
 ### Installation
 
